@@ -19,7 +19,15 @@ public class RayAttacher : MonoBehaviour
         
     }
 
-    void OnSelectEntered(SelectEnterEventArgs args)
+    protected void OnDisable()
+    {
+        if(_selectIntractable as Object != null)
+        {
+            _selectIntractable.selectEntered.RemoveListener(OnSelectEntered);
+        }
+    }
+
+    private void OnSelectEntered(SelectEnterEventArgs args)
     {
         if (!(args.interactorObject is XRRayInteractor))
             return;
