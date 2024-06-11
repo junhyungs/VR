@@ -21,6 +21,12 @@ public class RayAttacher : MonoBehaviour
 
     void OnSelectEntered(SelectEnterEventArgs args)
     {
+        if (!(args.interactorObject is XRRayInteractor))
+            return;
+
+        var attachTransform = args.interactorObject.GetAttachTransform(_selectIntractable);
+        var originAttachPos = args.interactorObject.GetLocalAttachPoseOnSelect(_selectIntractable);
+        attachTransform.SetLocalPose(originAttachPos);
     }
 
 }
