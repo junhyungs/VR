@@ -361,6 +361,15 @@ MonoBehaviour:
   Provider_ContinuousTurn: {fileID: 3818204911840513585}
   Provider_SnapTurn: {fileID: 7884399190976994405}
   Provider_Teleportation: {fileID: 4376492894678101421}
+  m_LeftHandMoveStyle: 0
+  m_RightHandTurnStyle: 0
+  m_MoveSpeed: 1.64
+  isEnableStrafe: 0
+  isUseGravity: 0
+  isEnableFly: 0
+  m_TurnSpeed: 0
+  isEnableTurnAround: 0
+  m_Snap: 0
 --- !u!1 &1239396127151326372
 GameObject:
   m_ObjectHideFlags: 0
