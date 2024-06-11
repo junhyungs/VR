@@ -14,7 +14,13 @@ public class RayAttacher : MonoBehaviour
             Debug.LogError("RayAttacher need SelectInteractable");
             return;
         }
+
+        _selectIntractable.selectEntered.AddListener(OnSelectEntered);
+        
     }
 
+    void OnSelectEntered(SelectEnterEventArgs args)
+    {
+    }
 
 }
