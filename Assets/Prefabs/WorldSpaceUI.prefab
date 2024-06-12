@@ -93,7 +93,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8263516676677146508}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3438480052165778400, guid: b48eea796ac0cf84882c4d36b910b07d, type: 3}
+        m_TargetAssemblyTypeName: Fire, Assembly-CSharp
+        m_MethodName: ButtonShoot
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1375749746465722086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1009,7 +1021,7 @@ GameObject:
   - component: {fileID: 5711499083663175795}
   - component: {fileID: 5711499083663175804}
   - component: {fileID: 5711499083663175805}
-  - component: {fileID: 850945141385905733}
+  - component: {fileID: 2364997957109015783}
   m_Layer: 0
   m_Name: WorldSpaceUI
   m_TagString: Untagged
@@ -1085,7 +1097,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &5711499083663175804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1122,7 +1134,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 2147483647
   m_RaycastTriggerInteraction: 1
---- !u!114 &850945141385905733
+--- !u!114 &2364997957109015783
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1131,7 +1143,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5711499083663175807}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3697a7cd3a5f9d54da5803226459a987, type: 3}
+  m_Script: {fileID: 11500000, guid: 28b535ab9140a9143acbc47b7ba7aa92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Btn_Temp: {fileID: 442937740158680076}
